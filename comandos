@@ -14,7 +14,7 @@ mkdir frontend frontend/css frontend/js frontend/assets
 
 # 3. Inicializar backend
 cd backend
-npm init -y 
+npm init -y #ejecutar dentro de backend
 
 # 4. Instalar dependencias
 npm install express mysql2 cors dotenv

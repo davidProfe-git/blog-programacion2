@@ -1,10 +1,10 @@
 # 1. Verificar herramientas
 node --version
 npm --version
-mysql --version
+mysql --version #instalar por su lado, o mariaDB 
 
 # 2. Crear estructura
-mkdir blog-recetas # opcional, llamenlo como quieran
+ # opcional, llamenlo como quieran
 cd blog-recetas # entren al nombre que crearon anteriormente
 mkdir backend
 cd backend
@@ -14,7 +14,7 @@ mkdir frontend frontend/css frontend/js frontend/assets
 
 # 3. Inicializar backend
 cd backend
-npm init -y
+npm init -y 
 
 # 4. Instalar dependencias
 npm install express mysql2 cors dotenv

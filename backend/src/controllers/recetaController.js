@@ -6,7 +6,7 @@ class RecetaController{
     static async obtenerRecetas(request, response){
         const recetas = await Model.obtenerRecetas()
         response.json({
-            succsess: true,
+            success: true,
             daticos: recetas
         })
     }
@@ -15,12 +15,14 @@ class RecetaController{
             const {id} = request.params
             const receta = await Model.obtenerPorId(id)
             if(!receta){
-              return  response.status(404).json({
-                    succsess: false,
+              return response.status(404).json({
+                    success: false,
                     mensaje: 'la receta no existe perro!!!'
                 })
+            }else{
+                response.json(receta)
+
             }
-            response.json(receta)
         }catch(error){
             throw error
         }
